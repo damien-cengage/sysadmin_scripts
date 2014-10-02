@@ -18,3 +18,18 @@ example, check ssh connectivity for all vmware servers:
 
 $ python check_ssh_conn.py vmware dmichalosky
 ---------------------------------------------------------------------------------------
+
+netcat-z.py
+
+Implementation of netcat -z -v for servers where netcat is not installed.
+
+usage:
+$ python netcat-z.py <host> <port>
+
+example, check to see if port 443 is open on mms.mongodb.com
+
+$ python netcat-z.py mms.mongodb.com 443
+Checking host: mms.mongodb.com port: 443
+True
+
+---------------------------------------------------------------------------------------
